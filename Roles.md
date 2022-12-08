@@ -1,3 +1,5 @@
 - Scrum-Master : Felix
 - Protokollant: Hermann
 - DevOps: Florian
+- Documentation & Gitlab : Mukhtar
+- Product Owner : Leonhard
