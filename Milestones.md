@@ -1,3 +1,4 @@
+
 ### 1. **Early/Mid November:** Set requirements
 ### 2. **November-December:** Draft
 ### 3. **Februar-März:** MVP (minimal viable product)
