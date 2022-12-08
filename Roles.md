@@ -1,0 +1,3 @@
+## - Scrum-Master : Felix
+## - Protokollant: Hermann
+## - DevOps: Florian
