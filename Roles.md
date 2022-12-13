@@ -1,5 +1,5 @@
-- Scrum-Master : Felix
-- Protokollant: Hermann
-- DevOps: Florian
-- Documentation & Gitlab : Mukhtar
-- Product Owner : Leonhard
+- Scrum-Master : Felix Schlegel @npz16
+- Protokollant: Hermann Fröhlich @xhw97
+- DevOps: Florian Martin Gebhardt @nck73
+- Documentation & Gitlab : Mukhtar Muse @tca87
+- Product Owner : Leonhard Alkewitz @kjy97
