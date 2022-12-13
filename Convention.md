@@ -1,18 +1,16 @@
-
-
 # Overview
 
-- Branch naming
-- Code style guide
-  - Dart
-  - Kotlin
-  - Swift
-- Versioning and Changelog
-- Markdown style guide
-- Git hooks
-- Review process
-- Development setup
-- Project structure
+- [Branch naming](#branch-naming)
+- [Code style guide](#code-style-guide)
+  - [Dart](#code-style-guide-dart)
+  - [Kotlin](#code-style-guide-kotlin)
+  - [Swift](#code-style-guide-swift)
+- [Versioning and Changelog](#versioning-and-changelog)
+- [Markdown style guide](#markdown-style-guide)
+- [Git hooks](#git-hooks)
+- [Review process](#review-process)
+- [Development setup](#development-setup)
+- [Project structure](#project-structure)
 
 ## Branch naming
 
