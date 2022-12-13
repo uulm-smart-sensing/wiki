@@ -17,7 +17,7 @@
     - [Arbeitsqualität](#arbeitsqualität) 
     - [Zuverlässigkeit](#zuverlässigkeit) 
     - [Organisations- und Planungsfähigkeit](#organisations-und-planungsfähigkeit) 
-- [Wichtige Punkte](#wichtige-Punkte) 
+- [Wichtige Punkte](#wichtige-punkte) 
 
 ## Bewertungsaspekte für SE-Projekte in verschiedenen Bereichen
 
