@@ -1,6 +1,6 @@
 ## Overview
 - [Bewertungsaspekte für SE-Projekte in verschiedenen Bereichen](#bewertungsaspekte-für-SE-Projekte-in-verschiedenen-Bereiche) 
-    - [Prozess(einhaltung)](#prozess)
+    - [Prozess](#prozess)
     - [Requirements Engineering](#requirements-engineering) 
     - [Architektur](#architektur) 
     - [Usability](#usability)  
