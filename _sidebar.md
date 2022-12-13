@@ -1,7 +1,0 @@
-Home
-Getting Started
-How it Works
-How to Use it
-Milestones
-Convention
-Roles
