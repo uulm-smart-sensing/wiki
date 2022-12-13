@@ -1,2 +1,3 @@
 **Relevant Shortcuts**
-- [Protocols](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation)
+
+[Protocols](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation)
