@@ -9,3 +9,10 @@ Welcome to our Anwendungsprojekt 22-23 Wiki.
 - [Roles](https://gitlab.uni-ulm.de/groups/se-anwendungsprojekt-22-23/-/wikis/Roles)
 
 ## Introduction and Motivation
+
+##Roles 
+- **Scrum-Master** : [Felix Schlegel](@npz16)
+- **Protokollant**: [Hermann Fröhlich](@xhw97)
+- **DevOps**: [Florian Martin Gebhardt](@nck73)
+- **Documentation & Gitlab** : [Mukhtar Muse](@tca87)
+- **Product Owner** : [Leonhard Alkewitz](@kjy97)
