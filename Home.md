@@ -6,7 +6,6 @@ Welcome to our Anwendungsprojekt 22-23 Wiki.
 - [How to Use it](https://gitlab.uni-ulm.de/groups/se-anwendungsprojekt-22-23/-/wikis/How-to-Use-it)
 - [Milestones](https://gitlab.uni-ulm.de/groups/se-anwendungsprojekt-22-23/-/wikis/Milestones)
 - [Convention](https://gitlab.uni-ulm.de/groups/se-anwendungsprojekt-22-23/-/wikis/Convention)
-- [Roles](https://gitlab.uni-ulm.de/groups/se-anwendungsprojekt-22-23/-/wikis/Roles)
 
 ## Introduction and Motivation
 
