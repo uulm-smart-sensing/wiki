@@ -9,6 +9,8 @@ Welcome to our Anwendungsprojekt 22-23 Wiki.
 
 ## Introduction and Motivation
 
+## Milestones 
+
 ## Roles 
 - **Scrum-Master** : [Felix Schlegel](@npz16)
 - **Protokollant**: [Hermann Fröhlich](@xhw97)
