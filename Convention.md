@@ -1,7 +1,7 @@
 # Overview
 
 - [Branch naming](#branch-naming)
-- [Code style guide](#code-style-guide)
+- Code style guide
   - [Dart](#code-style-guide-dart)
   - [Kotlin](#code-style-guide-kotlin)
   - [Swift](#code-style-guide-swift)
