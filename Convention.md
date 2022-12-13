@@ -1,10 +1,10 @@
 # Overview
 
 - [Branch naming](#branch-naming)
-- Code style guide
-  - [Dart](#code-style-guide-dart)
-  - [Kotlin](#code-style-guide-kotlin)
-  - [Swift](#code-style-guide-swift)
+- [Code style guide](#code-style-guide)
+  - [Dart](#dart)
+  - [Kotlin](#kotlin)
+  - [Swift](#swift)
 - [Versioning and Changelog](#versioning-and-changelog)
 - [Markdown style guide](#markdown-style-guide)
 - [Git hooks](#git-hooks)
@@ -45,7 +45,8 @@ Name of the issue in lowercase with whitespaces replaced by hyphens e.g. **add-n
 4. GitLab has automatically created `<Issue ID>-<Issue Name>` and you just have to add the `<prefix>/` part.
 5. Click `Create merge request` or `Create branch` according to your previous choice.
 
-## Code style guide - **Dart**
+## Code style guide 
+### Dart
 
 We follow the rules of [Effective Dart](https://dart.dev/guides/language/effective-dart) and use the [flutter_lints package](https://pub.dev/packages/flutter_lints) as recommended set of linter rules. They are enforced by the [Dart Formatter](https://pub.dev/packages/dart_style) and the [Dart Analyzer](https://pub.dev/packages/analyzer).
 
@@ -53,11 +54,11 @@ Formatting can be automatically done on save when the following is included in t
 
 `"editor.formatOnSave": true,`
 
-## Code style guide - **Kotlin**
+### Kotlin
 
 We follow the rules of the [Kotlin coding conventions](https://kotlinlang.org/docs/coding-conventions.html) and the [Android Kotlin style guide](https://developer.android.com/kotlin/style-guide). Both are enforced by [ktlint](https://pinterest.github.io/ktlint/) which is in some aspects more strict[\*](https://github.com/pinterest/ktlint/issues/284#issuecomment-425177186). The linter respects the `.editorconfig` file and can be customized if needed.
 
-## Code style guide - Swift
+### Swift
 
 We follow the rules of the [Official raywenderlich.com Swift style guide](https://github.com/kodecocodes/swift-style-guide) which is enforced by [SwiftLint](https://github.com/realm/SwiftLint). The linter can be added to XCode as Build Tool Plugin and there are plugins for [AppCode](https://plugins.jetbrains.com/plugin/9175-swiftlint/) and [VSCode](https://marketplace.visualstudio.com/items?itemName=vknabel.vscode-swiftlint).
 
