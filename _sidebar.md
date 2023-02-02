@@ -18,4 +18,4 @@
 
 [Project diary](https://docs.google.com/spreadsheets/u/3/d/1UWtQeFlyqbVSgGQvY-rOwtZPqCSduh0KtQvFLdmdV_c/edit?usp=sharing)
 
-Software Design Document
+Software Design
