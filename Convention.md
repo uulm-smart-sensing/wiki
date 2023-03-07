@@ -5,6 +5,7 @@
   - [Dart](#dart)
   - [Kotlin](#kotlin)
   - [Swift](#swift)
+- [Conventional Commits](#conventional-commits)
 - [Versioning and Changelog](#versioning-and-changelog)
 - [Markdown style guide](#markdown-style-guide)
 - [Git hooks](#git-hooks)
@@ -341,6 +342,98 @@ We follow the rules of the [Kotlin coding conventions](https://kotlinlang.org/do
 ### Swift
 
 We follow the rules of the [Official raywenderlich.com Swift style guide](https://github.com/kodecocodes/swift-style-guide) which is enforced by [SwiftLint](https://github.com/realm/SwiftLint). The linter can be added to XCode as Build Tool Plugin and there are plugins for [AppCode](https://plugins.jetbrains.com/plugin/9175-swiftlint/) and [VSCode](https://marketplace.visualstudio.com/items?itemName=vknabel.vscode-swiftlint).
+
+## Conventional Commits
+
+The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with SemVer, by describing the features, fixes, and breaking changes made in commit messages.
+
+### Commit Message Structure
+The commit message should be structured as follows:
+
+```
+<type>[optional scope]: <description>
+
+```
+```
+[optional body]
+```
+```
+[optional footer]
+```
+
+A commit that has the text BREAKING CHANGE: at the beginning of its optional body or footer section introduces a breaking API change
+
+### Types
+## `feat`
+
+- new functionality added
+
+## `fix`
+
+- fixes a bug
+- this doesn't include fixing formatting because the pipeline failed (in this case `style` would be the right choice)
+
+## `docs`
+
+- documentation changes e.g. README, CHANGELOG, code documentation
+- no code changes at all
+
+## `style`
+
+- changing the style of the code e.g. formatting
+- no additional functionality
+- no refactoring
+
+## `refactor`
+
+- refactoring the code e.g. splitting up a method into smaller methods, reducing redundance
+- no additional functionality
+
+## `perf`
+
+- performance improvement
+
+## `test`
+
+- Adding or correcting tests
+- no additional functionality or refactoring
+- only test files are affected by this
+
+## `build`
+
+- changes that affect the build system or external dependencies
+- probably rare
+
+## `ci`
+
+- changes at the pipeline e.g. adding coverage analysis or formatting check
+- no changes at the code base
+
+## `chore`
+
+- changes that don't affect the code base or tests
+- "the commit to chose, when the rest doesn't fit"
+
+## `revert`
+
+- reversion of previous commit(s)
+
+### Example 
+**Commit message with no body**
+```
+docs: correct spelling of CHANGELOG
+```
+**Commit message with scope**
+```
+feat(lang): add Polish language
+```
+**Commit message with description and breaking change footer**
+
+```
+feat: allow provided config object to extend other configs
+
+BREAKING CHANGE: `extends` key in config file is now used for extending other config files
+```
 
 ## Versioning and Changelog
 
