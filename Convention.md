@@ -5,6 +5,10 @@
   - [Dart](#dart)
   - [Kotlin](#kotlin)
   - [Swift](#swift)
+- [Documentation](#documentation)
+  - [Dart](#dart-doc)
+  - [Kotlin](#kotlin-doc)
+  - [Swift](#swift-doc)
 - [Conventional Commits](#conventional-commits)
 - [Versioning and Changelog](#versioning-and-changelog)
 - [Markdown style guide](#markdown-style-guide)
@@ -343,6 +347,290 @@ We follow the rules of the [Kotlin coding conventions](https://kotlinlang.org/do
 
 We follow the rules of the [Official raywenderlich.com Swift style guide](https://github.com/kodecocodes/swift-style-guide) which is enforced by [SwiftLint](https://github.com/realm/SwiftLint). The linter can be added to XCode as Build Tool Plugin and there are plugins for [AppCode](https://plugins.jetbrains.com/plugin/9175-swiftlint/) and [VSCode](https://marketplace.visualstudio.com/items?itemName=vknabel.vscode-swiftlint).
 
+
+## Documentation
+Fundamental rules of how to properly comment:
+
+1. Use concise comments to explain the intention of a function, class, or variable.
+2. Avoid unnecessary comments. If your code is self-explanatory, don't add comments that repeat the obvious code.
+3. Use comments to explain code that is not obvious or difficult to understand.
+4. Use annotation e.g. TODO/FIXME/NOTE/BUG
+5. Use comments to comment out code that you temporarily don't use but may need later.
+
+    ### Dart
+
+    1. **DO** format comments like sentences.
+
+        Capitalize the first word unless it’s a case-sensitive identifier. End it with a period (or “!” or “?”, I suppose). This is true for all comments: doc comments, inline stuff, even TODOs. Even if it’s a sentence fragment.
+        ```
+        GOOD
+        // Not if there is nothing before it.
+        if (_chunks.isEmpty) return false;
+        ```
+    2. **DON’T** use block comments for documentation.
+        You can use a block comment (/* ... */) to temporarily comment out a section of code, but all other comments should use //.
+        ```
+        GOOD
+        void greet(String name) {
+        // Assume we have a valid name.
+        print('Hi, $name!');
+        }
+        ```
+        ```
+        BAD
+        void greet(String name) {
+        /* Assume we have a valid name. */
+        print('Hi, $name!');
+        }
+        ```
+    3. **DO** use /// doc comments to document members and types.
+        ```
+        GOOD
+        /// The number of characters in this chunk when unsplit.
+        int get length => ...
+        ```
+        ```
+        BAD
+        // The number of characters in this chunk when unsplit.
+        int get length => ...
+        ```
+    4. **DO** start doc comments with a single-sentence summary.
+        ```
+        GOOD
+        /// Deletes the file at [path] from the file system.
+        void delete(String path) {
+        ...
+        }
+        ```
+        ```
+        BAD
+        /// Depending on the state of the file system and the user's permissions,
+        /// certain operations may or may not be possible. If there is no file at
+        /// [path] or it can't be accessed, this function throws either [IOError]
+        /// or [PermissionError], respectively. Otherwise, this deletes the file.
+        void delete(String path) {
+        ...
+        }
+        ```
+    5. **DO** separate the first sentence of a doc comment into its own paragraph.
+
+        Add a blank line after the first sentence to split it out into its own paragraph. If more than a single sentence of explanation is useful, put the rest in later paragraphs.
+        This helps you write a tight first sentence that summarizes the documentation. Also, tools like dart doc use the first paragraph as a short summary in places like lists of classes and members.
+        ```
+        GOOD
+        /// Deletes the file at [path].
+        ///
+        /// Throws an [IOError] if the file could not be found. Throws a
+        /// [PermissionError] if the file is present but could not be deleted.
+        void delete(String path) {
+        ...
+        }
+        ```
+        ```
+        BAD
+        /// Deletes the file at [path]. Throws an [IOError] if the file could not
+        /// be found. Throws a [PermissionError] if the file is present but could
+        /// not be deleted.
+        void delete(String path) {
+        ...
+        }
+        ```
+    6. **AVOID** redundancy with the surrounding context.
+
+        The reader of a class’s doc comment can clearly see the name of the class, what interfaces it implements, etc. When reading docs for a member, the signature is right there, and the enclosing class is obvious. None of that needs to be spelled out in the doc comment. Instead, focus on explaining what the reader doesn’t already know
+        ```
+        GOOD
+        class RadioButtonWidget extends Widget {
+        /// Sets the tooltip to [lines], which should have been word wrapped using
+        /// the current font.
+        void tooltip(List<String> lines) {
+            ...
+        }
+        }
+        ```
+        ```
+        BAD
+        class RadioButtonWidget extends Widget {
+        /// Sets the tooltip for this radio button widget to the list of strings in
+        /// [lines].
+        void tooltip(List<String> lines) {
+            ...
+            }
+        }
+        ```
+    7. **PREFER** starting function or method comments with third-person verbs.
+        ```
+        GOOD
+        /// Returns `true` if every element satisfies the [predicate].
+        bool all(bool predicate(T element)) => ...
+
+        /// Starts the stopwatch if not already running.
+        void start() {
+        ...
+        }
+        ```
+    8. **PREFER** starting a non-boolean variable or property comment with a noun phrase.
+        ```
+        GOOD
+        /// The current day of the week, where `0` is Sunday.
+        int weekday;
+
+        /// The number of checked buttons on the page.
+        int get checkedCount => ..
+        ```
+    9. **DON’T** write documentation for both the getter and setter of a property.
+        ```
+        GOOD
+        /// The pH level of the water in the pool.
+        ///
+        /// Ranges from 0-14, representing acidic to basic, with 7 being neutral.
+        int get phLevel => ...
+        set phLevel(int level) => ...
+        ```
+        ```
+        BAD
+        /// The depth of the water in the pool, in meters.
+        int get waterDepth => ...
+
+        /// Updates the water depth to a total of [meters] in height.
+        set waterDepth(int meters) => ...
+        ```
+    10. **DO** use square brackets in doc comments to refer to in-scope identifiers.
+        ```
+        GOOD
+        /// Throws a [StateError] if ...
+        /// similar to [anotherMethod()], but ....
+        ```
+        ```
+        GOOD
+        /// Similar to [Duration.inDays], but handles fractional days.
+        ```
+        ```
+        GOOD
+        /// To create a point, call [Point.new] or use [Point.polar] to ...
+        ```
+    11. DO use prose to explain parameters, return values, and exceptions.
+        ```
+        BAD
+        /// Defines a flag with the given name and abbreviation.
+        ///
+        /// @param name The name of the flag.
+        /// @param abbr The abbreviation for the flag.
+        /// @returns The new flag.
+        /// @throws ArgumentError If there is already an option with
+        ///     the given name or abbreviation.
+        Flag addFlag(String name, String abbr) => ...
+        ```
+        ```
+        GOOD
+        /// Defines a flag.
+        ///
+        /// Throws an [ArgumentError] if there is already an option named [name] or
+        /// there is already an option using abbreviation [abbr]. Returns the new flag.
+        Flag addFlag(String name, String abbr) => ...
+        ```
+
+    For more information you can check the official darts site : https://dart.dev/guides/language/effective-dart/documentation
+
+    ### Kotlin
+    1. **DO** for longer documentation comments, place the opening /** on a separate line and begin each subsequent line with an asterisk:
+         ```
+        GOOD
+        /**
+        * This is a documentation comment
+        * on multiple lines.
+        */
+        ```
+        ```
+        GOOD
+        /** This is a short documentation comment. */
+        ```
+    2. **AVOID** using @param and @return. 
+    
+        Use @param and @return only when a lengthy description is required which doesn't fit into the flow of the main text.
+    
+         ```
+        BAD
+        /**
+        * Returns the absolute value of the given number.
+        * @param number The number to return the absolute value for.
+        * @return The absolute value.
+        */
+        fun abs(number: Int): Int { /*...*/ }
+        ```
+        ```
+        GOOD
+        /**
+        * Returns the absolute value of the given [number].
+        */
+        fun abs(number: Int): Int { /*...*/ }
+        ```
+
+
+    ### Swift
+    1. **DO** single-sentence abstracts or summaries. 
+    
+        If a symbol already has a  source comment that begins with two forward slashes (//), insert an additional forward slash (/) to convert it to a documentation comment.
+
+        ```
+        GOOD
+        /// Eat the provided specialty sloth food.
+        mutating public func eat(_ food: Food, quantity: Int) throws -> Int {.
+        ```
+    2. **AVOID** the use of C-style comments (/* ... */). 
+         ```
+        BAD
+        /* Eat the provided specialty sloth food. */
+        mutating public func eat(_ food: Food, quantity: Int) throws -> Int {.
+        ```
+    3. **DO** add one or more paragraphs directly below a symbol’s summary to create a Discussion section
+         ```
+        GOOD
+        /// Eat the provided specialty sloth food.
+        ///
+        /// Sloths love to eat while they move very slowly through their rainforest 
+        /// habitats. They are especially happy to consume leaves and twigs, which they 
+        /// digest over long periods of time, mostly while they sleep.
+        /// 
+        /// When they eat food, a sloth's `energyLevel` increases by the food's `energy`.
+        mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
+        ```
+    4. **DO** describe the Parameter of a Method.
+
+        Swift supports two approaches to document the parameters of a method. You can add a Parameters section, or one or more parameter fields. Both use Markdown’s list syntax.
+
+        * A Parameters section begins with a single list item that contains the Parameters keyword and terminates with a colon (:). Individual parameters appear as nested list items. A colon separates a parameter’s name from its description.
+            ```
+            GOOD
+            /// - Parameters:
+            /// - food: The food for the sloth to eat.
+            /// - quantity: The quantity of the food for the sloth to eat.
+            mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
+            ```
+        * Parameter fields omit the parent list item and include the Parameter keyword in each of the individual list items, between the list item marker and the name of the parameter
+            ```
+            GOOD
+            /// - Parameter food: The food for the sloth to eat.
+            /// - Parameter quantity: The quantity of the food for the sloth to eat.
+            mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
+            ```
+    5.  **DO** describe the Return Value of a Method
+         ```
+         GOOD
+         /// - Returns: The sloth's energy level after eating.
+         mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
+         ```
+    6. **DO** describe the Thrown Errors of a Method
+        ```
+        GOOD
+        /// - Throws: `SlothError.tooMuchFood` if the quantity is more than 100.
+        mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
+        ```
+    For more information you can check the official darts site : https://www.swift.org/documentation/docc/writing-symbol-documentation-in-your-source-files
+
+
+
+
 ## Conventional Commits
 
 The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with SemVer, by describing the features, fixes, and breaking changes made in commit messages.
@@ -352,7 +640,6 @@ The commit message should be structured as follows:
 
 ```
 <type>[optional scope]: <description>
-
 ```
 ```
 [optional body]
