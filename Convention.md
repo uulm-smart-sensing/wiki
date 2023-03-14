@@ -6,9 +6,9 @@
   - [Kotlin](#kotlin)
   - [Swift](#swift)
 - [Documentation](#documentation)
-  - [Dart](#dart-doc)
-  - [Kotlin](#kotlin-doc)
-  - [Swift](#swift-doc)
+  - [Dart](#dart-documentation)
+  - [Kotlin](#kotlin-documentation)
+  - [Swift](#swift-documentation)
 - [Conventional Commits](#conventional-commits)
 - [Versioning and Changelog](#versioning-and-changelog)
 - [Markdown style guide](#markdown-style-guide)
@@ -357,7 +357,7 @@ Fundamental rules of how to properly comment:
 4. Use annotation e.g. TODO/FIXME/NOTE/BUG
 5. Use comments to comment out code that you temporarily don't use but may need later.
 
-    ### Dart
+    ### Dart Documentation
 
     1. **DO** format comments like sentences.
 
@@ -509,7 +509,7 @@ Fundamental rules of how to properly comment:
         GOOD
         /// To create a point, call [Point.new] or use [Point.polar] to ...
         ```
-    11. DO use prose to explain parameters, return values, and exceptions.
+    11. **DO** use prose to explain parameters, return values, and exceptions.
         ```
         BAD
         /// Defines a flag with the given name and abbreviation.
@@ -532,7 +532,7 @@ Fundamental rules of how to properly comment:
 
     For more information you can check the official darts site : https://dart.dev/guides/language/effective-dart/documentation
 
-    ### Kotlin
+    ### Kotlin Documentation
     1. **DO** for longer documentation comments, place the opening /** on a separate line and begin each subsequent line with an asterisk:
          ```
         GOOD
@@ -567,7 +567,7 @@ Fundamental rules of how to properly comment:
         ```
 
 
-    ### Swift
+    ### Swift Documentation
     1. **DO** single-sentence abstracts or summaries. 
     
         If a symbol already has a  source comment that begins with two forward slashes (//), insert an additional forward slash (/) to convert it to a documentation comment.
