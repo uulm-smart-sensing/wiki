@@ -372,15 +372,15 @@ Fundamental rules of how to properly comment:
     ```
     GOOD
     void greet(String name) {
-    // Assume we have a valid name.
-    print('Hi, $name!');
+        // Assume we have a valid name.
+        print('Hi, $name!');
     }
     ```
     ```
     BAD
     void greet(String name) {
-    /* Assume we have a valid name. */
-    print('Hi, $name!');
+        /* Assume we have a valid name. */
+        print('Hi, $name!');
     }
     ```
 3. **DO** use /// doc comments to document members and types.
@@ -399,7 +399,7 @@ Fundamental rules of how to properly comment:
     GOOD
     /// Deletes the file at [path] from the file system.
     void delete(String path) {
-    ...
+        ...
     }
     ```
     ```
@@ -409,7 +409,7 @@ Fundamental rules of how to properly comment:
     /// [path] or it can't be accessed, this function throws either [IOError]
     /// or [PermissionError], respectively. Otherwise, this deletes the file.
     void delete(String path) {
-    ...
+        ...
     }
     ```
 5. **DO** separate the first sentence of a doc comment into its own paragraph.
@@ -423,7 +423,7 @@ Fundamental rules of how to properly comment:
     /// Throws an [IOError] if the file could not be found. Throws a
     /// [PermissionError] if the file is present but could not be deleted.
     void delete(String path) {
-    ...
+        ...
     }
     ```
     ```
@@ -432,7 +432,7 @@ Fundamental rules of how to properly comment:
     /// be found. Throws a [PermissionError] if the file is present but could
     /// not be deleted.
     void delete(String path) {
-    ...
+        ...
     }
     ```
 6. **AVOID** redundancy with the surrounding context.
@@ -441,20 +441,20 @@ Fundamental rules of how to properly comment:
     ```
     GOOD
     class RadioButtonWidget extends Widget {
-    /// Sets the tooltip to [lines], which should have been word wrapped using
-    /// the current font.
-    void tooltip(List<String> lines) {
-        ...
-    }
+        /// Sets the tooltip to [lines], which should have been word wrapped using
+        /// the current font.
+        void tooltip(List<String> lines) {
+            ...
+        }
     }
     ```
     ```
     BAD
     class RadioButtonWidget extends Widget {
-    /// Sets the tooltip for this radio button widget to the list of strings in
-    /// [lines].
-    void tooltip(List<String> lines) {
-        ...
+        /// Sets the tooltip for this radio button widget to the list of strings in
+        /// [lines].
+        void tooltip(List<String> lines) {
+            ...
         }
     }
     ```
@@ -466,7 +466,7 @@ Fundamental rules of how to properly comment:
 
     /// Starts the stopwatch if not already running.
     void start() {
-    ...
+        ...
     }
     ```
 8. **PREFER** starting a non-boolean variable or property comment with a noun phrase.
@@ -534,7 +534,7 @@ For more information you can check the official darts site : https://dart.dev/gu
 
 ### Kotlin Documentation
 1. **DO** for longer documentation comments, place the opening /** on a separate line and begin each subsequent line with an asterisk:
-        ```
+    ```
     GOOD
     /**
     * This is a documentation comment
@@ -549,7 +549,7 @@ For more information you can check the official darts site : https://dart.dev/gu
 
     Use @param and @return only when a lengthy description is required which doesn't fit into the flow of the main text.
 
-        ```
+    ```
     BAD
     /**
     * Returns the absolute value of the given number.
@@ -577,13 +577,13 @@ For more information you can check the official darts site : https://dart.dev/gu
     mutating public func eat(_ food: Food, quantity: Int) throws -> Int {.
     ```
 2. **AVOID** the use of C-style comments (/* ... */). 
-        ```
+    ```
     BAD
     /* Eat the provided specialty sloth food. */
     mutating public func eat(_ food: Food, quantity: Int) throws -> Int {.
     ```
 3. **DO** add one or more paragraphs directly below a symbol’s summary to create a Discussion section
-        ```
+    ```
     GOOD
     /// Eat the provided specialty sloth food.
     ///
@@ -614,11 +614,11 @@ For more information you can check the official darts site : https://dart.dev/gu
         mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
         ```
 5.  **DO** describe the Return Value of a Method
-        ```
-        GOOD
-        /// - Returns: The sloth's energy level after eating.
-        mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
-        ```
+    ```
+    GOOD
+    /// - Returns: The sloth's energy level after eating.
+    mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
+    ```
 6. **DO** describe the Thrown Errors of a Method
     ```
     GOOD
