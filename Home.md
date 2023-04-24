@@ -232,4 +232,4 @@ If it is possible to access the sensor or access at least collected sensor data,
 
 ### Sensor implementation information
 
-See [sensor_information.md](sensor_information.md) for information about how the sensors work and how to implement them.
+See [sensor_information.md](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation/-/blob/master/Sensors/sensor_information.md) for information about how the sensors work and how to implement them.
