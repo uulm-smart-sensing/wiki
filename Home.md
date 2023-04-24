@@ -118,7 +118,13 @@ The reason for this is that we have one component to read and standardize sensor
 
 More information can be found in the software design document in [Documentation](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation).
 
-### Smart Sensing Library 
+#### Sensing Plugin
+
+Architectur
+
+Class Diagram 
+
+#### Smart Sensing Library 
 
 Architectur
 
