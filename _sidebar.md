@@ -7,12 +7,17 @@
 [Evaluation](https://gitlab.uni-ulm.de/groups/se-anwendungsprojekt-22-23/-/wikis/Evaluation)
 
 **Documents**
+[Mockup](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation/-/tree/master/Mockup)
 
 [Protocols](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation)
+
+[Sensors](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation/-/tree/master/Sensors)
 
 [Software design document](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation/-/blob/master/Software%20design%20document/design_doc.pdf)
 
 [Software requirements document](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation/-/blob/master/Software%20requirements%20document/SRD.pdf)
+
+[User Story](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation/-/tree/master/User%20Story%20Map)
 
 **Relevant Shortcuts**
 
