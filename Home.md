@@ -18,31 +18,9 @@ That's why we develop a smart sensing library, which can be used to easily imple
 This library will be able to track sensors from the smartphone and some wearables, collect the sensor data and save it. 
 Additionally, it will be possible to either get live data or store and process the data. 
 
+All further information, about how you can use and test the library and a demo app can be found in the [smart-sensing-library](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/smart-sensing-library) repository.
 
-## Getting Started
-
-1. Clone the repo
-
-    ```bash
-    git clone https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/smart-sensing-library.git
-    ```
-
-2. Execute setup script
-
-    On Windows run:
-
-    ```powershell
-    .\setup.ps1
-    ```
-
-    On Linux/macOS run:
-
-    ```bash
-    bash setup.sh
-    ```
-
-3. Your setup is now complete and you're good to go.
-
+## Development hints
 
 ### Keeping Pigeon code up to date
 
@@ -66,7 +44,7 @@ bash run_pigeon.sh
 We use Android Studio to write code for our Android sensor implementations.
 In order for Android Studio to recognize all dependencies, it is mandatory to open the `./example/android/` directory with Android Studio. If any other directory is opened, the dependencies won't be recognized.
 
-### Linting
+#### Linting
 
 We use [Ktlint](https://pinterest.github.io/ktlint/) to lint our Kotlin code.
 
@@ -87,7 +65,7 @@ For Ktlint to format the code automatically, run:
 For the development of the iOS platform code, which is written in Swift, we use Xcode.
 In order for Xcode to recognize all dependencies and correctly set up the project structure, it is mandatory to open the `./example/ios/` directory with Xcode.
 
-### Linting
+#### Linting
 
 To lint the Swift code we use [Swiftlint](https://github.com/realm/SwiftLint) (see [here](https://github.com/realm/SwiftLint#installation) for installation guide).
 If *Swiftlint* is installed successfully, you can manually check the Swift files by running
@@ -118,12 +96,6 @@ This section covers the software architecture. It is split into two core compone
 The reason for this is that we have one component to read and standardize sensor data in a platform-independent way, while the other component represents most of the smart features like storage and filtering of values.
 
 More information can be found in the software design document in [Documentation](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation).
-
-#### Sensing Plugin
-
-Architectur
-
-Class Diagram 
 
 #### Smart Sensing Library 
 
