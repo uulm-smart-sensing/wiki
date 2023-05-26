@@ -20,6 +20,8 @@
 
 [User Story](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation/-/tree/master/User%20Story%20Map)
 
+[User Manual](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation/-/tree/master/User%20manual)
+
 **Relevant Shortcuts**
 
 [Project diary](https://docs.google.com/spreadsheets/u/3/d/1UWtQeFlyqbVSgGQvY-rOwtZPqCSduh0KtQvFLdmdV_c/edit?usp=sharing)
