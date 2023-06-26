@@ -731,25 +731,25 @@ Example CHANGELOG.md:
 
 ### Fixed
 
-- Fixed big bug ([#16](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/smart-sensing-library/-/issues/42)) (Angela Merkel)
+- Fixed big bug ([#16](https://github.com/uulm-smart-sensing/smart-sensing-library/issues/42)) (Angela Merkel)
 
 ## [0.2.0] - 2022-12-12
 
 ### Changed
 
-- Changed functionality ([#69](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/smart-sensing-library/-/issues/69)) (Johnny Sins)
+- Changed functionality ([#69](https://github.com/uulm-smart-sensing/smart-sensing-library/issues/69)) (Johnny Sins)
 
 ### Added
 
-- Added new feature ([#42](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/smart-sensing-library/-/issues/42)) (Zaphod Beeblebrox)
+- Added new feature ([#42](https://github.com/uulm-smart-sensing/smart-sensing-library/issues/42)) (Zaphod Beeblebrox)
 
 ## [0.1.0] - 2022-11-16
 
 _Initial release._
 
-[0.2.1]: <https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/smart-sensing-library/-/releases/0_2_1>
-[0.2.0]: <https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/smart-sensing-library/-/releases/0_2_0>
-[0.1.0]: <https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/smart-sensing-library/-/releases/0_1_0>
+[0.2.1]: <https://github.com/uulm-smart-sensing/smart-sensing-library/releases/0_2_1>
+[0.2.0]: <https://github.com/uulm-smart-sensing/smart-sensing-library/releases/0_2_0>
+[0.1.0]: <https://github.com/uulm-smart-sensing/smart-sensing-library/releases/0_1_0>
 ```
 
 ### Release workflow
@@ -759,7 +759,7 @@ _Initial release._
 3. Update the version in `pubspec.yaml`
 4. Commit, push and merge changes
 5. Create release tag to corresponding commit
-6. Create release in [GitLab Releases](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/smart-sensing-library/-/releases) from release tag
+6. Create release in [GitLab Releases](https://github.com/uulm-smart-sensing/smart-sensing-library/releases) from release tag
 7. optional: Update git submodules
 
 ## Markdown style guide
@@ -770,7 +770,7 @@ Linters which we can use are [markdownlint](https://github.com/DavidAnson/markdo
 
 markdownlint has an [extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint). Vale has [one](https://marketplace.visualstudio.com/items?itemName=errata-ai.vale-server) as well.
 
-[This](https://gitlab.com/gitlab-org/gitlab/-/blob/master/scripts/lint-doc.sh) could be an example for documentation linting to improve our documentation.
+[This](https://gitlab.com/gitlab-org/gitlab/blob/master/scripts/lint-doc.sh) could be an example for documentation linting to improve our documentation.
 
 ## Git hooks
 
@@ -797,7 +797,7 @@ We use different editors/IDEs for each platform/language:
 * Android/Kotlin: [Android Studio](https://developer.android.com/studio/)
 * iOS/Swift: [XCode](https://developer.apple.com/xcode/)
 
-Android Studio and XCode are only required when working on the [Sensing Plugin](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/sensing-plugin).
+Android Studio and XCode are only required when working on the [Sensing Plugin](https://github.com/uulm-smart-sensing/sensing-plugin).
 
 ### Editor/IDE setup
 
@@ -834,7 +834,7 @@ We use scripts to execute shell commands for the project setup or to generate co
 * On Linux/MacOS run: `bash <file name>`
 * On Windows run: `.\<file name>` Note: They are powershell scripts but work as bash script as well.
 
-For the setup on the [Sensing Plugin](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/sensing-plugin) and [Smart Sensing Library](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/smart-sensing-library) run the `setup.ps1` script.
+For the setup on the [Sensing Plugin](https://github.com/uulm-smart-sensing/sensing-plugin) and [Smart Sensing Library](https://github.com/uulm-smart-sensing/smart-sensing-library) run the `setup.ps1` script.
 
 **Sensing Plugin**
 

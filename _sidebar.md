@@ -1,10 +1,10 @@
 **Overview**
 
-[Home](https://gitlab.uni-ulm.de/groups/se-anwendungsprojekt-22-23/-/wikis/home)
+[Home](https://github.com/uulm-smart-sensing/wiki/blob/main/Home.md)
 
-[Convention](https://gitlab.uni-ulm.de/groups/se-anwendungsprojekt-22-23/-/wikis/Convention)
+[Convention](https://github.com/uulm-smart-sensing/wiki/blob/main/Convention.md)
 
-[Evaluation](https://gitlab.uni-ulm.de/groups/se-anwendungsprojekt-22-23/-/wikis/Evaluation)
+[Evaluation](https://github.com/uulm-smart-sensing/wiki/blob/main/Evaluation.md)
 
 
 **Relevant Shortcuts**

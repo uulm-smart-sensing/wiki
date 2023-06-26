@@ -18,7 +18,7 @@ That's why we develop a smart sensing library, which can be used to easily imple
 This library will be able to track sensors from the smartphone and some wearables, collect the sensor data and save it. 
 Additionally, it will be possible to either get live data or store and process the data. 
 
-All further information, about how you can use and test the library and a demo app can be found in the [smart-sensing-library](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/smart-sensing-library) repository.
+All further information, about how you can use and test the library and a demo app can be found in the [smart-sensing-library](https://github.com/uulm-smart-sensing/smart-sensing-library) repository.
 
 ## Development hints
 
@@ -90,22 +90,22 @@ If you want *Swiftlint* to be automatically run by Xcode, you need to set up a n
 
 ### Software Architecture
 This section covers the software architecture. It is split into two core components: \
-[Smart Sensing Library](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/smart-sensing-library) and the [Sensing Plugin](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/sensing-plugin). 
+[Smart Sensing Library](https://github.com/uulm-smart-sensing/smart-sensing-library) and the [Sensing Plugin](https://github.com/uulm-smart-sensing/sensing-plugin). 
 \
 \
 The reason for this is that we have one component to read and standardize sensor data in a platform-independent way, while the other component represents most of the smart features like storage and filtering of values.
 
-More information can be found in the software design document in [Documentation](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation).
+More information can be found in the software design document in [Documentation](https://github.com/uulm-smart-sensing/documentation).
 
 #### Smart Sensing Library 
 
 Architectur
 
-![Architectur](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation/-/blob/master/Software%20design%20document/Graphics/SmartSensingLibraryNew.png)
+![Architectur](https://github.com/uulm-smart-sensing/documentation/blob/master/Software%20design%20document/Graphics/SmartSensingLibraryNew.png)
 
 Class Diagram
 
-![IOManager](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation/-/blob/master/Software%20design%20document/Graphics/SmartSensingLibraryNew.png)
+![IOManager](https://github.com/uulm-smart-sensing/documentation/blob/master/Software%20design%20document/Graphics/SmartSensingLibraryNew.png)
 
-![SensorManager](https://gitlab.uni-ulm.de/se-anwendungsprojekt-22-23/documentation/-/blob/master/Software%20design%20document/Graphics/SmartSensingLibraryNew.png)
+![SensorManager](https://github.com/uulm-smart-sensing/documentation/blob/master/Software%20design%20document/Graphics/SmartSensingLibraryNew.png)
 
